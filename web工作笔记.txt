@@ -1,0 +1,38 @@
+http://www.w3school.com.cn/cssref/pr_text-overflow.asp
+text-overflow:clip;		    修剪文本。
+text-overflow:ellipsis;	显示省略符号来代表被修剪的文本。
+http://www.w3school.com.cn/cssref/pr_pos_overflow.asp
+overflow:visible;	默认值。内容不会被修剪，会呈现在元素框之外。
+overflow:hidden;	内容会被修剪，并且其余内容是不可见的。
+overflow:scroll;		内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。
+overflow:auto;		如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。
+overflow:inherit;	规定应该从父元素继承 overflow 属性的值。
+移动端头部需要加的META标签
+META标签大全
+控制移动端页面的收缩等，必加在head区域的代码：
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+css文件前声明： @charset "utf-8";
+h5屏蔽页面中数字当手机号的问题：在head中加上 <meta content="telephone=no" name="format-detection" />
+标准的电话号码格式：<a href="tel:1-408-555-5555">1-408-555-5555</a>		点击后自动打开电话功能
+
+样式重写：select、option、checkbox
+
+button按钮统一样式：
+height:40px;line-height:40px;border-radius:8px;font-size:18px;letter-spacing:1px;
+
+响应式网页布局的规范、手机开发的注意事项
+bootstrap中，那些栅格布局系统、img-responsive等的原理代码，学习其中值得在网页中借鉴的东西
+JQuery文件的熟练使用
+banner轮播图的酷炫动态特效，参考收藏的优秀网站、网页
+定时器的使用
+http://www.5iweb.com.cn/ ，这个网站的hover特效
+JQueryMobile文件的原理代码，学习其中值得在网页中借鉴的东西
+一段文字总体长度一样，但是文字数不一样，文字均匀分布？
+
+shareSDK，分享功能
+show、hide、slideUp、slideDown、fadeIn、fadeOut......	各种显示隐藏的方式
+	fade效果不佳
+outline、box-shadow
+
+
+<meta name="format-detection" content="telephone=no,address=no">
