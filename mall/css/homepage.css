@@ -1,0 +1,335 @@
+/*header*/
+.head{
+    height:0.89rem;
+    padding-top:0.39rem;
+    position:relative;
+    background-color:#fff;
+}
+.search{
+    height:0.6rem;
+    line-height:0.6rem;
+    margin-left:0.3rem;
+    background-color:#f1f2f4;
+    width:80%;
+    position:relative;
+    border-radius:0.05rem;
+}
+.search>span{
+    position:absolute;
+    left:0.2rem;
+    top:0.15rem;
+    width:0.28rem;
+    height:0.28rem;
+    background:url("../img/puzzle.png") no-repeat 0 -6.69rem;
+    background-size:10rem 10rem;
+}
+.search>input{
+    margin-left:0.64rem;
+    font-size:0.26rem;
+    width:85%;
+}
+.head>span{
+    position:absolute;
+    right:0.5rem;
+    top:0.47rem;
+    width:0.33rem;
+    height:0.37rem;
+    background:url("../img/puzzle.png") no-repeat 0 -7.24rem;
+    background-size:10rem 10rem;
+}
+.head>i{
+    position:absolute;
+    right:0.5rem;
+    font-style:normal;
+    top:0.5rem;
+}
+/*section*/
+section{
+    margin-bottom:1.29rem;
+}
+/*轮播图*/
+.swiper-container{
+    height:3.6rem;
+}
+.swiper-slide>img{
+    width:100%;
+    height:3.6rem;
+}
+.division{
+    height:0.2rem;
+    background-color:#f1f2f4;
+}
+.sales{
+    font-size:0.28rem;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+}
+.sales>div{
+    flex:1;
+    text-align:center;
+}
+.sales>div>div{
+    height:0.5rem;
+}
+.sales img{
+    display:block;
+    margin:0.2rem auto;
+    width:1.1rem;
+    height:1.1rem;
+}
+.like{
+    margin:0.32rem auto;
+    text-align:center;
+    font-size:0.32rem;
+    color:#333;
+}
+/*猜你喜欢—商品列表*/
+.list{
+    width:97%;
+    margin:0 auto;
+    overflow:hidden;
+}
+.list li{
+    float:left;
+    width:48%;
+    margin:0 1% 0.2rem;
+}
+.details{
+    position:relative;
+    border-radius:0.02rem;
+    height:5rem;
+    display:flex;
+    display:-webkit-flex;
+}
+.details>img{
+    display:block;
+    max-width:100%;
+    margin:0 auto;
+    max-height:5rem;
+    border-radius:0.02rem;
+}
+.transparent{
+    position:absolute;
+    width:100%;
+    bottom:0;
+    height:1rem;
+    background-color:rgba(255,255,255,0.5);
+    border-bottom-right-radius:0.02rem;
+    border-bottom-left-radius:0.02rem;
+}
+.title{
+    font-size:0.24rem;
+    color:#333;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+    width:95%;
+    margin:0.1rem auto 0;
+    height:0.5rem;
+    line-height:0.5rem;
+}
+.transparent>.red{
+    width:95%;
+    margin:0 auto;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+
+/*搜索*/
+.ss{
+    background-color:#fff;
+}
+.ss>div{
+    border-bottom:0.01rem solid #f1f2f4;
+    margin-left:3%;
+    padding-right:3%;
+    padding-top:0.32rem;
+    padding-bottom:0.25rem;
+}
+.t{
+    font-size:0.24rem;
+    color:#999;
+}
+.tags{
+    overflow:hidden;
+}
+.tag{
+    float:left;
+    margin-right:0.3rem;
+    margin-top:0.25rem;
+    padding:0.06rem 0.16rem;
+    border:0.01rem solid #999;
+    font-size:0.26rem;
+    border-radius:0.08rem;
+}
+/*section3*/
+.section3{
+    position:relative;
+}
+.section3>.head>i{
+    position:absolute;
+    top:0.52rem;
+    left:0.3rem;
+    width:0.17rem;
+    height:0.33rem;
+    background:url("../img/puzzle.png") no-repeat 0 0;
+    background-size:10rem 10rem;
+}
+.section3 .search{
+    margin-left:0.8rem;
+}
+.screen{
+    position:relative;
+    height:0.6rem;
+    width:91%;
+    margin:0 auto 0.2rem;
+    color:#333;
+    font-size:0.28rem;
+    border-bottom:0.01rem solid #f1f2f4;
+}
+.screen>div{
+    position:absolute;
+    top:0;
+}
+.zh{
+    left:0;
+}
+.xl{
+    left:1.4rem;
+}
+.jg{
+    left:2.8rem;
+    width:0.88rem;
+    height:0.4rem;
+}
+.jg>i,.jg>span{
+    position:absolute;
+    right:0;
+    width:0.25rem;
+    height:0.14rem;
+    background:url("../img/puzzle.png") no-repeat 0;
+    background-size:10rem 10rem;
+}
+.jg>i{
+    background-position-y:-8.56rem;
+    top:0.06rem;
+}
+.jg>span{
+    background-position-y:-9.47rem;
+    bottom:0.01rem;
+}
+.filter{
+    right:0;
+    width:0.88rem;
+    height:0.4rem;
+}
+.filter>span{
+    position:absolute;
+    right:0;
+    top:0.15rem;
+    width:0.25rem;
+    height:0.14rem;
+    background:url("../img/puzzle.png") no-repeat 0 -9.47rem;
+    background-size:10rem 10rem;
+}
+.filter.red>span{
+    background-position-y:-9.22rem;
+}
+/*筛选下拉框*/
+.menu{
+    position:absolute;
+    top:2rem;
+    z-index:1000;
+    width:100%;
+    display:none;
+}
+.white{
+    background-color:#fff;
+}
+.z{
+    min-height:5rem;
+    background-color:rgba(0,0,0,0.25);
+}
+.category{
+    width:91%;
+    margin:0 auto;
+    border-bottom:0.01rem solid #f1f2f4;
+    overflow:hidden;
+}
+.category>div{
+    padding-top:0.28rem;
+    padding-bottom:0.34rem;
+    border-bottom:0.01rem solid #f1f2f4;
+}
+.category>div.twoBtn{
+    border-bottom:none;
+    overflow:hidden;
+}
+.twoBtn>div{
+    border:0.01rem solid #999;
+}
+.tag>i{
+    font-style:normal;
+    font-size:0.2rem;
+}
+.twoBtn>div{
+    width:40%;
+    text-align:center;
+    color:#333;
+    font-size:0.28rem;
+    height:0.6rem;
+    line-height:0.6rem;
+    border-radius:0.08rem;
+}
+
+
+
+
+
+/*footer*/
+footer{
+    font-size:0.26rem;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+    height:1.28rem;
+    border-top:0.01rem solid #dcdcdc;
+    background-color:#fff;
+}
+footer>div{
+    flex:1;
+    text-align:center;
+}
+footer>div>i{
+    display:block;
+    background:url("../img/puzzle.png") no-repeat 0;
+    background-size:10rem 10rem;
+    height:0.44rem;
+    margin:0.1rem auto;
+}
+.homepage>i{
+    width:0.53rem;
+    background-position-y:-1.12rem;
+}
+.classify>i{
+    width:0.43rem;
+    height:0.33rem;
+    background-position-y:-2.69rem;
+    margin:0.17rem auto;
+}
+.cart>i{
+    width:0.45rem;
+    background-position-y:-3.69rem;
+}
+.my>i{
+    width:0.42rem;
+    background-position-y:-4.79rem;
+}

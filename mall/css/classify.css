@@ -1,0 +1,47 @@
+/*section*/
+section{
+    margin-bottom:1.29rem;
+}
+/*footer*/
+footer{
+    font-size:0.26rem;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    display:flex;
+    display:-webkit-flex;
+    justify-content:center;
+    align-items:center;
+    height:1.28rem;
+    border-top:0.01rem solid #dcdcdc;
+    background-color:#fff;
+}
+footer>div{
+    flex:1;
+    text-align:center;
+}
+footer>div>i{
+    display:inline-block;
+    background:url("../img/puzzle.png") no-repeat 0;
+    background-size:10rem 10rem;
+    height:0.44rem;
+    margin:0.1rem auto;
+}
+.homepage>i{
+    width:0.53rem;
+    background-position-y:-1.68rem;
+}
+.classify>i{
+    width:0.43rem;
+    height:0.33rem;
+    background-position-y:-2.24rem;
+    margin:0.17rem auto;
+}
+.cart>i{
+    width:0.45rem;
+    background-position-y:-3.69rem;
+}
+.my>i{
+    width:0.42rem;
+    background-position-y:-4.79rem;
+}

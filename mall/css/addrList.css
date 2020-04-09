@@ -1,0 +1,141 @@
+/*头部header*/
+header{
+    text-align:center;
+    color:#333;
+    font-size:0.36rem;
+}
+/*section*/
+section{
+    margin-bottom:1rem;
+}
+.list{
+    color:#333;
+    font-size:0.24rem;
+    padding-top:0.3rem;
+}
+.address{
+    color:#999;
+}
+.name,.phone{
+    font-size:0.28rem;
+}
+.info{
+    margin-left:0.3rem;
+    padding-right:0.3rem;
+    padding-bottom:0.12rem;
+    border-bottom:0.01rem solid #e7e7e7;
+    display:flex;
+    display:-webkit-flex;
+}
+.name{
+    flex:1;
+    line-height:0.4rem;
+}
+.pa{
+    flex:4;
+}
+.phone{
+    height:0.5rem;
+}
+.address{
+    line-height:0.4rem;
+}
+.check{
+    display:flex;
+    display:-webkit-flex;
+    border-bottom:0.01rem solid #e7e7e7;
+    height:0.7rem;
+    line-height:0.7rem;
+    padding:0 0.3rem;
+}
+.checkbox{
+    flex:2;
+}
+.e{
+    flex:2;
+}
+.edit,.delete{
+    flex:1;
+    text-align:right;
+}
+.checkbox>i{
+    display:inline-block;
+    width:0.26rem;
+    height:0.26rem;
+    background:url("../img/puzzle.png") no-repeat -0.9rem -7.6rem;
+    background-size:10rem 10rem;
+    padding-right:0.14rem;
+    position:relative;
+    top:0.02rem;
+}
+.checkbox>i.yes{
+    background-position-y:-8.17rem;
+}
+.edit>b,.delete>span{
+    display:inline-block;
+    height:0.3rem;
+    background:url("../img/puzzle.png") no-repeat -0.9rem;
+    background-size:10rem 10rem;
+    position:relative;
+    top:0.02rem;
+}
+.edit>b{
+    width:0.28rem;
+    background-position-y:-8.75rem;
+}
+.delete>span{
+    width:0.34rem;
+    background-position-y:-9.38rem;
+}
+/*footer*/
+footer{
+    height:1rem;
+    position:fixed;
+    width:100%;
+    bottom:0;
+}
+/*mask*/
+.hint{
+    width:5rem;
+    height:2.8rem;
+    background-color:#fff;
+    margin:4rem auto;
+    border-radius:0.05rem;
+    color:#333;
+}
+.hint>p{
+    text-align:center;
+    height:0.8rem;
+    line-height:0.8rem;
+    font-size:0.32rem;
+    border-bottom:0.01rem solid #ededed;
+}
+.hint>h1{
+    height:1.2rem;
+    line-height:1.2rem;
+    text-align:center;
+    font-size:0.26rem;
+    font-weight:normal;
+    border-bottom:0.01rem solid #ededed;
+}
+.two{
+    display:flex;
+    display:-webkit-flex;
+    align-items:center;
+    justify-content:center;
+    height:0.8rem;
+}
+.cancel,.confirm{
+    flex:1;
+    font-size:0.28rem;
+    height:0.6rem;
+    line-height:0.6rem;
+    text-align:center;
+}
+.cancel{
+    border-right:0.01rem solid #ededed;
+    color:#666;
+}
+.confirm{
+    color:#dc3a2d;
+}

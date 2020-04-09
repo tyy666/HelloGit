@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>结算</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no">
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/settle.css">
+</head>
+<body>
+<header>
+    <i onclick="JavaScript:history.go(-1);"></i>
+    结算
+</header>
+<div class="division"></div>
+<section>
+    <div class="list">
+        <div class="info">
+            <div class="lo"><span></span></div>
+            <div class="name">王先生</div>
+            <div class="pa">
+                <div class="phone">13517001709</div>
+                <div class="address">北京市海淀区过偶记电光火石离开过后</div>
+            </div>
+            <div class="ri"><i></i></div>
+        </div>
+    </div>
+    <!--商品-->
+    <div class="goods">
+        <div class="img"><img src="img/2.jpg"></div>
+        <div class="txt">
+            <div class="goodsName">收到货过得更好商量好嘎多开个会</div>
+            <div class="sss">
+                <div class="left">
+                    <span>型号</span>
+                    <i>尺寸</i>
+                </div>
+                <div class="price">
+                    ￥99.00
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--数量-->
+    <div class="number">
+        数量
+        <div class="jsq">
+            <div class="reduce">-</div>
+            <div class="digit"><input type="text" value="0"></div>
+            <div class="add">+</div>
+        </div>
+    </div>
+    <!--优惠券-->
+    <div class="check">
+        <div class="checkbox"><i></i>已选择一张优惠券</div>
+        <div class="reduceNum"><span>-5.00</span><i></i></div>
+    </div>
+
+
+    <!--应付金额-->
+    <div class="pay">
+        <h1 class="head">
+            <div class="greyThree">应付金额</div>
+            <div class="red"><i>￥</i><span>94.00</span></div>
+        </h1>
+        <div class="payMethod weixin">
+            <i></i>
+            <img src="img/weizf.png">
+            <span>微信支付</span>
+        </div>
+        <div class="payMethod Alipay">
+            <i></i>
+            <img src="img/Alipay.png">
+            <span>支付宝支付</span>
+        </div>
+    </div>
+
+    <!--给商家留言-->
+    <div class="message">
+        <textarea placeholder="给商家留言，选填，不超过140个字"></textarea>
+    </div>
+</section>
+
+<footer><div class="btn">去付款</div></footer>
+<div class="pop"></div>
+<div class="mask">
+    <div class="bto">
+        <h1>优惠券</h1>
+        <p><b></b><span>满88减5元</span><i></i></p>
+        <p><b></b><span>满188减15元</span><i></i></p>
+        <div class="cho">
+            <div class="cancel">取消</div>
+            <div class="confirm">确定</div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mobile.js"></script>
+<script>
+    $('.info').on('click',function () {
+        window.location.href='addrList.html';
+    });
+    $('.reduce').on('click',function () {
+        var number=parseFloat($('.digit>input').val());
+        if(number==0){
+            $('.pop').text('不能更少了~').show();
+            setTimeout(function () {
+                $('.pop').fadeOut();
+            },600);
+        }else{
+            number--;
+            $('.digit>input').val(number);
+        }
+    });
+    $('.add').on('click',function () {
+        var number=parseFloat($('.digit>input').val());
+        number++;
+        $('.digit>input').val(number);
+    });
+    $('.payMethod').on('click',function () {
+        $(this).children('i').toggleClass('yes');
+        if($(this).children('i').hasClass('yes')){
+            $(this).siblings('.payMethod').children('i').removeClass('yes');
+        }
+    });
+    //优惠券
+    $('.check').on('click',function () {
+       $('.mask').fadeIn(200);
+    });
+    $('.cancel').on('click',function () {
+        $('.mask').fadeOut(200);
+    });
+    $('.bto>p').on('click',function () {
+        $(this).children('i').toggleClass('yes');
+        if($(this).children('i').hasClass('yes')){
+            $(this).siblings('p').children('i').removeClass('yes');
+        }
+    });
+    $('.cho').prev('p').css('border-bottom','none');
+</script>
+</body>
+</html>

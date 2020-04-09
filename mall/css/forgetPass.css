@@ -1,0 +1,61 @@
+/*头部header*/
+header{
+    text-align:center;
+    color:#333;
+    font-size:0.36rem;
+}
+
+.two{
+    width:84%;
+    height:0.78rem;
+    line-height:0.78rem;
+    border:0.01rem solid #dcdcdc;
+    border-radius:0.05rem;
+}
+.phone{
+    margin:0.72rem auto 0;
+}
+.yzm{
+    margin:0.64rem auto 0;
+}
+.two>input{
+    padding-left:0.28rem;
+    width:55%;
+}
+.yzmBtn{
+    width:1.84rem;
+    float:right;
+    text-align:center;
+    height:0.5rem;
+    line-height:0.5rem;
+    margin-top:0.14rem;
+    border-left:0.01rem solid #dcdcdc;
+}
+.greyThree{
+    width:83%;
+    margin:0.64rem auto 0;
+    font-size:0.32rem;
+}
+.password{
+    margin:0.3rem auto 0;
+}
+.password>input{
+    width:75%;
+}
+.password>span{
+    float:right;
+    width:0.4rem;
+    height:0.17rem;
+    background:url("../img/puzzle.png") no-repeat 0 -0.45rem;
+    background-size:10rem 10rem;
+    margin:0.305rem 0.2rem;
+}
+.password>span.open{
+    width:0.43rem;
+    height:0.25rem;
+    background-position-y:-0.75rem;
+    margin:0.265rem 0.2rem;
+}
+.btn{
+    margin-top:0.64rem;
+}

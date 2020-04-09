@@ -1,0 +1,41 @@
+/*头部header*/
+header{
+    text-align:center;
+    color:#333;
+    font-size:0.36rem;
+}
+
+.greyThree{
+    width:83%;
+    margin:1.14rem auto 0;
+    font-size:0.32rem;
+}
+.two{
+    width:84%;
+    height:0.78rem;
+    line-height:0.78rem;
+    border:0.01rem solid #dcdcdc;
+    border-radius:0.05rem;
+    margin:0.4rem auto 0;
+}
+.two>input{
+    padding-left:0.28rem;
+    width:75%;
+}
+.two>span{
+    float:right;
+    width:0.4rem;
+    height:0.17rem;
+    background:url("../img/puzzle.png") no-repeat 0 -0.45rem;
+    background-size:10rem 10rem;
+    margin:0.305rem 0.2rem;
+}
+.two>span.open{
+    width:0.43rem;
+    height:0.25rem;
+    background-position-y:-0.75rem;
+    margin:0.265rem 0.2rem;
+}
+.btn{
+    margin-top:1.2rem;
+}

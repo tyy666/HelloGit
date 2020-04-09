@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no">
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<header>
+    <i onclick="JavaScript:history.go(-1);"></i>
+    登录
+</header>
+<div class="division"></div>
+<section>
+    <div class="two phone">
+        <input type="tel" placeholder="手机号">
+    </div>
+    <div class="two password">
+        <input type="password" placeholder="密码">
+    </div>
+    <div class="btn">登录</div>
+    <div class="rf">
+        <span>手机号快速注册</span>
+        <i>忘记密码</i>
+    </div>
+</section>
+<footer>
+    <div class="sh">
+        <div class="greyThree"><img src="img/weixin.png"><div>微信</div></div>
+    </div>
+    <div class="sh">
+        <div class="greyThree"><img src="img/weibo.png"><div>微博</div></div>
+    </div>
+    <div class="sh">
+        <div class="greyThree"><img src="img/qq.png"><div>QQ</div></div>
+    </div>
+    <div class="or">or</div>
+</footer>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mobile.js"></script>
+<script>
+    $('.rf>span').on('click',function () {
+        window.location.href='register.html';
+    });
+    $('.rf>i').on('click',function () {
+        window.location.href='forgetPass.html';
+    });
+</script>
+</body>
+</html>

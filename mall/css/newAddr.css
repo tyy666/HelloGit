@@ -1,0 +1,50 @@
+/*头部header*/
+header{
+    text-align:center;
+    color:#333;
+    font-size:0.36rem;
+}
+/*section*/
+.btn{
+    margin-top:0.76rem;
+}
+.name,.phone,.address,.street{
+    margin-left:0.3rem;
+    padding-right:0.3rem;
+    border-bottom:0.01rem solid #ededed;
+    font-size:0.26rem;
+}
+.name,.phone,.address{
+    height:1rem;
+    line-height:1rem;
+}
+.address{
+    position:relative;
+}
+.address>b{
+    font-weight:normal;
+    color:#333;
+    font-size:0.28rem;
+}
+.address>i{
+    position:absolute;
+    right:0.3rem;
+    top:0.355rem;
+    width:0.16rem;
+    height:0.29rem;
+    background:url(../img/puzzle.png) no-repeat -1.93rem 0;
+    background-size:10rem 10rem;
+    
+}
+input{
+    width:100%;
+}
+.street{
+    padding-top:0.1rem;
+    padding-bottom:0.1rem;
+}
+textarea{
+    width:100%;
+    height:2rem;
+    line-height:0.4rem;
+}

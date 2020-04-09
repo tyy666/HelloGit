@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品评价页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no">
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/evaluate.css">
+</head>
+<body>
+<header>
+    <i onclick="JavaScript:history.go(-1);"></i>
+    <div class="t3">
+        <div class="three">商品</div>
+        <div class="three">详情</div>
+        <div class="three red">评价</div>
+    </div>
+    <span></span>
+    <b></b>
+</header>
+<div class="division"></div>
+<section>
+    <!--买家评价-->
+    <div class="buyers">
+        <div class="info">
+            <div class="pic"><img src="img/yifu.jpg"></div>
+            <div class="name">耶苏</div>
+            <div class="star">
+                <span></span><span></span><span></span><span></span>
+                <i></i>
+            </div>
+        </div>
+        <div class="evalTxt">
+            淘宝网是亚太地区较大的网络零售、商圈，由阿里巴巴集团在2003年5月创立。
+            淘宝网是中国深受欢迎的网购零售平台，拥有近5亿的注册用户数，
+            每天有超过6000万的固定访客，同时每天的在线商品数已经超过了8亿件，
+            平均每分钟售出4.8万件商品。
+        </div>
+        <div class="shareImg">
+            <div><img src="img/1.jpg"></div>
+            <div><img src="img/2.jpg"></div>
+            <div><img src="img/3.jpg"></div>
+            <div><img src="img/4.jpg"></div>
+        </div>
+        <div class="dd">
+            <div class="color">米白色</div>
+            <div class="size">M码</div>
+            <div class="time">2017/01/02:00</div>
+        </div>
+        <div class="to">
+            <div class="thumbs"><i></i><span>111</span></div>
+            <div class="assess"><i></i><span>2000</span></div>
+        </div>
+    </div>
+    <div class="buyers">
+        <div class="info">
+            <div class="pic"><img src="img/yifu1.png"></div>
+            <div class="name">kkk</div>
+            <div class="star">
+                <span></span><span></span><span></span><span></span>
+                <i></i>
+            </div>
+        </div>
+        <div class="evalTxt">
+            淘宝网是亚太地区较大的网络零售、商圈，由阿里巴巴集团在2003年5月创立。
+            淘宝网是中国深受欢迎的网购零售平台，拥有近5亿的注册用户数，
+            每天有超过6000万的固定访客，同时每天的在线商品数已经超过了8亿件，
+            平均每分钟售出4.8万件商品。
+        </div>
+        <div class="shareImg">
+            <div><img src="img/1.jpg"></div>
+            <div><img src="img/2.jpg"></div>
+            <div><img src="img/3.jpg"></div>
+            <div><img src="img/4.jpg"></div>
+        </div>
+        <div class="dd">
+            <div class="color">米白色</div>
+            <div class="size">M码</div>
+            <div class="time">2017/01/02:00</div>
+        </div>
+        <div class="to">
+            <div class="thumbs"><i></i><span>111</span></div>
+            <div class="assess"><i></i><span>2000</span></div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mobile.js"></script>
+<script>
+    $('.t3>div:first').on('click',function () {
+        window.location.href='details.html';
+    });
+    $('.thumbs').on('click',function () {
+        $(this).children('i').toggleClass('pre');
+        var num=$(this).children('span').text();
+        if($(this).children('i').hasClass('pre')){
+            num++;
+        }else{
+            num--;
+        }
+        $(this).children('span').text(num);
+    });
+    $('.assess').on('click',function () {
+        window.location.href='reply.html';
+    });
+</script>
+</body>
+</html>

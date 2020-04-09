@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>地址列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no">
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/addrList.css">
+</head>
+<body>
+<header>
+    <i onclick="JavaScript:history.go(-1);"></i>
+    收货地址
+</header>
+<div class="division"></div>
+<section>
+    <div class="list">
+        <div class="info">
+            <div class="name">王先生</div>
+            <div class="pa">
+                <div class="phone">13517001709</div>
+                <div class="address">北京市海淀区过偶记电光火石离开过后收到了更好看</div>
+            </div>
+        </div>
+        <div class="check">
+            <div class="checkbox"><i></i>设为默认地址</div>
+            <div class="e"></div>
+            <div class="edit"><b></b></div>
+            <div class="delete"><span></span></div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div class="info">
+            <div class="name">迪丽热巴</div>
+            <div class="pa">
+                <div class="phone">13517001709</div>
+                <div class="address">北京市海淀区过偶记电光火石离开过后收到了更好看</div>
+            </div>
+        </div>
+        <div class="check">
+            <div class="checkbox"><i></i>设为默认地址</div>
+            <div class="e"></div>
+            <div class="edit"><b></b></div>
+            <div class="delete"><span></span></div>
+        </div>
+    </div>
+</section>
+<footer><div class="btn">新建收货地址</div></footer>
+<div class="mask">
+    <div class="hint">
+        <p>提示</p>
+        <h1>确定要删除该收货地址吗？</h1>
+        <div class="two">
+            <div class="cancel">取消</div>
+            <div class="confirm">确定</div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mobile.js"></script>
+<script>
+    $('footer>.btn').on('click',function () {
+        window.location.href='newAddr.html';
+    });
+    $('.checkbox').on('click',function () {
+        $(this).children('i').toggleClass('yes');
+    });
+    $('.delete>span').on('click',function () {
+        $('.mask').fadeIn(200);
+    });
+    $('.cancel').on('click',function () {
+        $('.mask').fadeOut(200);
+    });
+</script>
+</body>
+</html>

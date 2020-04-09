@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册（设置密码）</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no,address=no">
+    <link rel="stylesheet" href="css/m-common.css">
+    <link rel="stylesheet" href="css/registerPass.css">
+</head>
+<body>
+<header>
+    <i onclick="JavaScript:history.go(-1);"></i>
+    注册
+</header>
+<div class="division"></div>
+<section>
+    <div class="greyThree">设置登录密码</div>
+    <div class="two">
+        <input type="password" placeholder="请输入6-12位字母和数字的组合">
+        <span></span>
+    </div>
+    <div class="btn">提交</div>
+</section>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/mobile.js"></script>
+<script>
+    $('.two>span').on('click',function () {
+        $(this).toggleClass('open');
+        if($(this).hasClass('open')){
+            $(this).prev('input').attr('type','text');
+        }else{
+            $(this).prev('input').attr('type','password');
+        }
+    });
+</script>
+</body>
+</html>
